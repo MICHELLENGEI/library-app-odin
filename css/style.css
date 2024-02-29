@@ -1,0 +1,25 @@
+*{
+margin: 0;
+padding: 0;
+}
+.top{
+    background-image: url('../img/background-img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+.header{
+    text-align: center;
+    font-size: 68px;
+    color: white;
+    padding-top: 120px;
+}
+.newBook{
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    border-radius: 8px;
+}
