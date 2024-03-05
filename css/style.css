@@ -1,29 +1,33 @@
-*{
-margin: 0;
-padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
-.top{
+
+.top {
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-body{
+
+body {
     /* background-image: url('../img/background-img.jpg'); */
     background-image: url('../img/ryunosuke-kikuno-FKqxZ58bVjU-unsplash.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    
+
 }
-.header{
+
+.header {
     text-align: center;
     font-size: 38px;
     color: #008cff;
-    
+
 }
-.newBook{
+
+.newBook {
     height: 40px;
     width: 100px;
     padding: 10px;
@@ -33,61 +37,147 @@ body{
     border-radius: 8px;
     margin: 10px 20px;
 }
-.modal{
-    display:none;
+
+.modal {
+    display: none;
     justify-content: center;
     align-items: center;
-    margin: 50px auto;
-    width: 300px;
-    height: 380px;
+    margin: 10vh auto;
+    left: 40vw;
+    width: 400px;
+    height: 500px;
     border-radius: 8px;
-    background-color: #048af7;
-    z-index: 1;
+    background-color: #fff;
+    z-index: 1000;
+    position: fixed;
 
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     padding: 10px 20px;
 }
-.form-header{
+
+.form-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.heading{
+
+.heading {
+    font-size: 20px;
     margin: 10px;
-    color: rgb(255, 255, 255);
+    color: #048af7;
 }
-.close{
+
+.close {
     background-color: transparent;
     border: none;
+    width: 40px;
     padding: 10px;
+    border-radius: 4px;
+   
 }
-.close:hover{
+
+.close:hover {
     background-color: red;
-}
-label{
-    padding: 10px 0;
     color: white;
+}
+
+label {
+    padding: 10px 0;
+    color: #048af7;
     font-weight: 900;
 }
+
 input[type="text"],
 input[type="number"] {
-    width: 200px;
+    width: 350px;
     height: 30px;
-    border: none;
-    border-radius: 4px; 
-    padding: 0 10px; 
+    border: 2px solid #048af7;
+    border-radius: 4px;
+    padding: 0 10px;
     margin: 10px 0;
 }
+
 input[type="radio"] {
     border: none;
 }
-.radio{
 
+.sendNewBook {
+    height: 40px;
+    width: 120px;
+    background-color: #048af7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.radio {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
+.bookContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    /* or overflow-x: scroll; */
+    white-space: nowrap;
+    margin: 50px auto;
+    border-radius: 8px;
+    width: 100%;
+    height: 80vh;
+    background-color: #33333356;
+
+}
+
+.custom-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    width: 250px;
+    height:350px;
+    margin: 25px;
+    background-color: #048af7;
+    flex-shrink: 0;
+    color: white;
+}
+.card h2 {
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card h3 {
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+.card p {
+    padding: 10px 0;
+    font-size: 14px;
+}
+.card button{
+    height: 40px;
+    width: 120px;
+    margin: 20px 0;
+    color: #048af7;
+    background-color: #fff;
+    border: 2px solid #008cff;
+}
+.card button:hover{
+    background-color: #fa0000;
+    color: #fff;
+}
+.card p:first-child {
+    margin-top: 10px;
+}
