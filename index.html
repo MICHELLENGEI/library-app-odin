@@ -9,33 +9,38 @@
 </head>
 
 <body>
-    
+
     <div class="top">
         <h1 class="header">Novels Hub</h1>
         <button type="button" class="newBook" onclick="showModal()">New Book</button>
     </div>
-       
+
         <div class="modal ">
-            <form action="">
+
+            <form action="" id="myForm">
                 <div class="form-header">
-                    <h3 class="heading" >Add New Book</h3>
+                    <h3 class="heading">Add New Book</h3>
                     <button type="button" class="close">X</button>
                 </div>
                 <label for="title">Title: <br> <input type="text" name="title" id="title"></label>
-                
-                <label for="author">Author: <br> <input type="text" name="author" id="author"></label>
-                
-                <label for="pages">Pages: <br> <input type="number" name="pages" id="pages" min="20"></label>
-                <div class="radio">
-                    <label for="read"><input type="radio" name="read" id="read"> Read</label>
-                <label for="notread"><input type="radio" name="read" id="noread"> Not Read</label>
-                </div>
-                
 
+                <label for="author">Author: <br> <input type="text" name="author" id="author"></label>
+
+                <label for="pages">Pages: <br> <input type="number" name="pages" id="pages" min="20"></label>
+                <!-- <div class="radio"> -->
+                <label for="read"><input type="radio" name="read" id="readbook"> Read</label>
+                <label for="notread"><input type="radio" name="read" id="noread"> Not Read</label>
+                <!-- </div> -->
+
+                <button type="submit" class="sendNewBook">Send</button>
             </form>
         </div>
-        
-    
+
+    <div class="bookContainer">
+
+
+    </div>
+
 
     <script src="./js/main.js"></script>
 </body>
